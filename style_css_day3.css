@@ -1,0 +1,94 @@
+.boxmodel{
+    text-align: center;
+    border: 2px solid red;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle,red,yellow);
+    margin:50px;
+    padding: 50px;
+}
+
+#mc{
+    border: 2px;
+    width: 500px;
+    height: 150px;
+    background-color:yellow ;
+    padding: 10px;
+    margin: auto;
+}
+
+.box{
+    border: 2px;
+    width: 100px;
+    height: 15px;
+    /* background-color:rgb(225, 13, 211) ; */
+    padding: 10px;
+    margin: 30px;
+}
+
+.ab{
+    background-color: aqua;
+    position: sticky;
+    top:0%
+}
+.re{
+    background-color: blue;
+    position: absolute;
+    
+}
+.st{
+    background-color: brown;
+    position: relative;
+    right: 80px;
+}
+.fi{
+    background-color:blueviolet;
+    position: relative;
+    left: 100px;
+}
+.herit{
+    font-size: 20px;
+    color: white;
+}
+
+p{
+    font-size: 50px;
+    color: red
+}
+.child{
+    font-size: inherit;
+    color:inherit;
+    background: linear-gradient(to right,purple,pink);
+}
+.background{
+    background: radial-gradient(circle,skyblue,pink);
+}
+
+/* flex */
+.main{
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    margin: 27px;
+    padding: 15px;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.box1{
+    width: 50px;
+    height: 50%;
+    background-color: red;
+    border: 2px solid black;
+    text-align:center;
+    
+
+}
