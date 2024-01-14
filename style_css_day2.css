@@ -1,0 +1,71 @@
+h1{
+    font-style: italic; color: blue;
+}
+
+/* Four pilars of properties */
+
+/* 1. List property */
+ul{
+    list-style: circle inside url("https://tse2.mm.bing.net/th?id=OIP.pPobLRQTuOWznpg86LLvJAHaGL&pid=Api&P=0&h=180");
+}
+
+/* 2. Font properties */
+p{
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: blueviolet;
+    font-style: oblique;
+}
+/* 3. Text properties */
+p{
+    text-align: center;
+    text-transform:capitalize;
+    text-decoration:underline;
+}
+/* 4. border properties */
+p{
+    border: 1px solid red
+    /* border style -solid,dotted,dashes */
+}
+
+/* selectors */
+/* 1.class selector-> dot operator */
+.ele{
+    color: brown;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bg{
+    background-color: yellowgreen;
+}
+
+.bg1{
+    background-color: cadetblue;
+}
+
+/* 2. ID selector-># symbol */
+#dotted{
+    border: 4px dotted red ;
+}
+/* Display */
+
+.block{
+  display: block;
+  background-color: red;
+  padding: 5px;  
+  margin: 10px;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+}
+
+.inline{
+    display: inline-block;
+  background-color: red;
+  padding: 5px;  
+  margin: 10px;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+}
