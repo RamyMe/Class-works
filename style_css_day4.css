@@ -1,0 +1,169 @@
+
+/* Importing font styles  */
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Single+Day&display=swap'); */
+*{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 15px;
+    /* width: 450px;
+    height: 450px;
+    border: 2px solid white; */
+
+}
+/* overflow property */
+.overflow-container{
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid red;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    /* overflow visible will show the entire content */
+    /* overflow: visible; */
+    /* hidden will not show overflow content */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    
+}
+/* measurements 
+cm, mm, inch - absoulte measurements
+1 px(1/96 of 1-inch)
+1 pt - points(1/72 of 1 inch)
+1pc - picas(1/12 of 1 inch) 
+16px = 1pc 
+
+vw - view width
+vh - view height
+*/
+
+.measurements{
+    height: 20vh;
+    border: 2px solid white;
+    width: vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+
+.sample1{
+    width: 150px;
+    height: 80%;
+    background-color: white;
+    overflow: auto;
+}
+
+.sample2{
+    width: 150px;
+    height: 80%;
+    /* to make a circle
+    border-radius: 50%;  */
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+/* em- relavtive parent fontsize 
+1em = 20px
+
+rm - relative to root element fontsize*/
+.sample3{
+    width: 1em;
+    height: 1pc;
+    background-color: green;
+}
+
+html{
+    font-size: 20px;
+    font-family: 'Single Day', cursive;
+    /* font-family: 'Rubik Glitch Pop', system-ui; */
+}
+
+/* grid  */
+
+.gridmain{
+    margin: 15px;
+    height: 300px;
+    padding: 15px;
+    border: 5px solid white;
+    display: grid;
+    gap: 0.5rem;
+    /* grid-template-columns: 200px 100px 220px; */
+    /* grid-template-rows: 400px 150px 100px 30px 50px; */
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.box1{
+    border: 5px solid rgb(9, 117, 59);
+    text-align: center;
+    background-color: rgb(205, 239, 161);
+    display: grid;
+    place-items: center;
+}
+
+/* flag design  */
+.orange{
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+}
+.white{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.green{
+    width: 100%;
+    height: 80px;
+    background-color: green;
+}
+
+.circle{
+    width: 100px;
+    height: 80px;
+    background-color: indigo;
+    border-radius: 50%;
+
+}
+
+/* styling grid  */
+.stylefeatures{
+    display: grid;
+    text-align: center;
+    height: 50vh;
+    width: 50vh;
+    grid-template-areas:"head head head" "slide main main" "foot foot foot";
+}
+
+.header{
+    background-color:aquamarine ;
+    grid-area: head;
+}
+
+.slidebar{
+    background-color: peachpuff;
+    grid-area: slide;
+    
+}
+
+.content{
+    background-color: purple;
+    grid-area: main;
+}
+
+.footer{
+    background-color: sandybrown;
+    grid-area: foot;
+}
